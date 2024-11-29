@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Add Car Form</title>
+
+<meta charset="utf-8" />
+<meta name="description" content="Lab 10"  />
+<meta name="keywords" content="PHP, File, input, output" />
+<link rel="stylesheet" href="addcar.css" type="text/css" />
+<!-- Description: Form Input for Car -->
+<!-- Author: <your name> -->
+<!-- Date: <last date updated> -->
+<!-- Validated: OK <date checked> || <what still needs to be fixed> -->
+
+<title>Lab 10 Form: Add a Car</title>
+</head>
+<body>
+    <h1>Add a New Car</h1>
+    <form action="cars_add.php" method="post">
+        <label for="make">Make:</label>
+        <input type="text" id="make" name="make" required><br><br>
+
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" required><br><br>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required><br><br>
+
+        <label for="yom">Year of Manufacture:</label>
+        <input type="number" id="yom" name="yom" required><br><br>
+
+        <input type="submit" value="Add Car">
+    </form>
+</body>
+</html>

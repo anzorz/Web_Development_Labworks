@@ -1,0 +1,73 @@
+/*
+filename: lab03.css
+author: M Anzor Yousuf
+created: 16/08/2024
+last modified: 16/08/2024
+description: CSS file for lab04task1.html
+*/
+
+h1 {
+    color: purple;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+* {
+  font-family: Calibri, sans-serif;
+  color: #2F4F4F;
+}
+
+h2 {
+    color: rgb(0, 128, 128);
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  aside, footer {
+    font-style: italic;
+}
+ 
+  h1, h2, h3 {
+    font-family: Arial, sans-serif;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  #images {
+    text-align: center;
+  }
+  
+  #headings {
+    color: red;
+  }
+  
+  .special {
+    color: darkorange;
+  }
+  
+  .right-align {
+    text-align: right;
+  }
+ 
+  nav a {
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid black;
+  }
+  
+
+  ol ul {
+    list-style-type: square;
+  }
+  
+  aside:hover {
+    display: none;
+  }
+  
+  nav a:hover {
+    background-color: lightblue;
+    border-color: darkblue;
+  }
+  

@@ -1,0 +1,83 @@
+/*
+filename: main.css
+author: M Anzor Yousuf
+created: 18/08/2024
+last modified: 18/08/2024
+description: CSS file for lab04task2.html
+*/
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(images/background.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    height: 150px;
+    width: 100%;
+}
+
+header h1 {
+    font-family: 'Love Ya Like A Sister', Arial;
+    letter-spacing: 4px;
+    font-size: 72px;
+    padding-top: 5px;
+    padding-left: 0.5em;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+    float: left;
+    font-size: 93%;
+}
+
+nav li a {
+    display: block;
+    font-weight: bold;
+    padding: 0.625em 3.5em; /* Adjust padding to fit the design */
+    text-decoration: none;
+    color: #666;
+    border-right: 1px solid #babab9;
+}
+
+nav li a:hover {
+    background-color: #94ddf4;
+    color: #2c2c2c;
+}
+
+img {
+    max-width: 100%;
+}
+
+#section1, #section2, #section3 {
+    float: left;
+    width: 28%; /* Adjusted width to ensure all sections fit in one row */
+    margin: 1%; /* Adjusted margin for spacing */
+    text-align: justify;
+    background-color: #ffffff;
+    padding: 1em;
+    border: 1px solid #cccccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#section3 {
+    margin-right: 0; /* Remove margin-right for the last section */
+}
+
+footer {
+    clear: both;
+    font-family: 'Love Ya Like A Sister', Arial;
+    background-color: #94ddf4;
+    padding: 0.5em 1.5em;
+    text-align: center;
+    background-position: bottom;
+}

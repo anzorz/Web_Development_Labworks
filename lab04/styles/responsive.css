@@ -1,0 +1,66 @@
+/*
+filename: responsive.css
+author: M Anzor Yousuf
+created: 18/08/2024
+last modified: 18/08/2024
+description: CSS file for responsive design of lab04task2.html
+*/
+
+
+/* Media query for medium displays (e.g., tablets) */
+@media screen and (min-width: 31.25em) { /* ~500px */
+    nav ul li {
+        width: 33%; /* Three columns navigation */
+    }
+    
+    #section1, #section2 {
+        width: 43%; /* Sections 1 and 2 take up 43% each */
+        float: left;
+        margin: 1em;
+    }
+    
+    #section3 {
+        width: 100%; /* Section 3 takes up the full width */
+        float: none;
+        margin: 1em 0;
+    }
+    
+    img {
+        float: left;
+        width: 30%; /* Image takes up 30% of width */
+        margin: 1em 1em 1em 0;
+    }
+    
+    article {
+        min-width: 600px; /* Minimum width for the article */
+    }
+}
+
+/* Media query for small displays (e.g., mobile phones) */
+@media screen and (max-width: 31.25em) { /* ~500px */
+    header h1 {
+        font-size: 48px;
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav ul li {
+        width: 100%; /* Single column navigation */
+    }
+    
+    #section1, #section2, #section3 {
+        margin: 0;
+        float: none;
+        width: 100%; /* Sections take up full width */
+    }
+    
+    img {
+        display: block;
+        margin: 0 auto; /* Center the image */
+        width: 80%; /* Image takes up 80% of width */
+    }
+    
+    article {
+        min-width: 100%; /* Article takes up full width */
+    }
+}

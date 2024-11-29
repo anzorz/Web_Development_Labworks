@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="CWA Help Desk Appointment">
+    <meta name="keywords" content="Help Desk, Appointment, CWA">
+    <meta name="author" content="Your Name">
+    <title>CWA Help Desk Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 20px;
+            width: 200px; /* Adjust the width as needed */
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            width: 20%;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 75%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .form-inline {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-inline label {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>CWA Help Desk Appointment</h1>
+    <img src="logo.png" alt="CWA Logo" title="CWA Help Desk">
+
+    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <p>The Help Desk is located in ATC620. Open 10:30 to 19:00 Monday to Friday</p>
+        <p>Check Blackboard for when CWA tutors will be there.</p>
+
+        <fieldset>
+            <legend>Student details</legend>
+
+            <div class="form-group">
+                <label for="student_id">Student ID</label>
+                <input type="text" id="student_id" name="student_id" placeholder="Enter your student ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="given_name">Given Name</label>
+                <input type="text" id="given_name" name="given_name" placeholder="Enter your given name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="family_name">Family Name</label>
+                <input type="text" id="family_name" name="family_name" placeholder="Enter your family name" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your unit</legend>
+
+            <div class="form-inline">
+                <input type="radio" id="cos10011" name="unit" value="COS10011" required>
+                <label for="cos10011">COS10011</label>
+
+                <input type="radio" id="cos60004" name="unit" value="COS60004">
+                <label for="cos60004">COS60004</label>
+
+                <input type="radio" id="cos60007" name="unit" value="COS60007">
+                <label for="cos60007">COS60007</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Tutor</legend>
+
+            <div class="form-group">
+                <label for="tutor">Your Tutor</label>
+                <select id="tutor" name="tutor" required>
+                    <option value="">Please Select</option>
+                    <option value="tutor1">Tutor 1</option>
+                    <option value="tutor2">Tutor 2</option>
+                    <option value="tutor3">Tutor 3</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Issue</legend>
+
+            <div class="form-inline">
+                <input type="checkbox" id="html" name="issue[]" value="HTML">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css" name="issue[]" value="CSS">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" id="javascript" name="issue[]" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+
+                <input type="checkbox" id="php" name="issue[]" value="PHP">
+                <label for="php">PHP</label>
+
+                <input type="checkbox" id="mysql" name="issue[]" value="MySQL">
+                <label for="mysql">MySQL</label>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description of Issue</label>
+                <textarea id="description" name="description" placeholder="Write description of your problem here..." required></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred Date / Time</legend>
+
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Book">
+    </form>
+</body>
+</html>
